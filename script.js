@@ -90,6 +90,12 @@ function selectRow(index) {
     row.classList.add('highlight');
 }
 
+document.getElementById('refreshData').addEventListener('click', () => {
+    // chemicals = [...this.chemicals]; // Reset to the original data
+    // selectedRowIndex = -1; // Clear any selected row
+    renderTable();
+});
+
 // Function to move a row up
 function moveRowUp() {
     if (selectedRowIndex > 0) {
